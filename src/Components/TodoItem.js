@@ -18,6 +18,7 @@ class TodoItem extends Component {
         <p className="todo-item">
           <input
             type="checkbox"
+            checked={completed}
             onChange={this.props.markComplete.bind(this, id)}
           />{" "}
           {title}
